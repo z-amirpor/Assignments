@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question16</title>
+</head>
+<body>
+    <script>
+function haseljam() {
+        a=parseInt(document.getElementById("number1").value)
+        b=parseInt(document.getElementById("number2").value)
+        c=parseInt(document.getElementById("number3").value)
+        d=parseInt(document.getElementById("number4").value)
+
+document.getElementById("p1").innerHTML=Number(a)+Number(d)
+document.getElementById("p2").innerHTML=Number(b)+Number(c)
+}
+    </script>
+  
+       
+</script>
+<input type="text" id="number1"
+placeholder="عدد اول ">
+<br>
+<input type="text" id="number2"
+placeholder="عدد دوم">
+<br>
+<input type="text" id="number3"
+placeholder=" عدد سوم ">
+<br>
+<input type="text" id="number4"
+placeholder=" عدد چهارم ">
+<br>
+<p id="p1"></p>
+<p id="p2"></p>
+<button onclick="haseljam()">جمع</button>
+
+</body>
+</html>
