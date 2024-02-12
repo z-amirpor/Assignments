@@ -1,0 +1,25 @@
+<div class="container">
+    <form [formGroup]="formTask"><div  class="row mt-5">
+        <div  class="col-lg-8">
+            <input type="text" class="form-control" formControlName="title" placeholder="enter text form checklis">
+        </div>
+        <div  class="col-lg-4">
+            <button (click)="onSubmiteTask()" [desabled]="formTask.invalid" type="submit" [class.btn-success]="this.submitType==0"  [class.btn-warning]="this.submitType==1" class="btn btn-success">@if (this.submitType==0) {submit}@if (this.submitType==1) {update}</button>
+        </div>
+        </div>
+    </form>
+<div class="row">
+    <div class="col-12">
+<app-task-item
+**ngFor="let item of taskList"
+[task]="item"
+(deleted)="onDeleteTask($event)"
+(edited)="onEditTask($event)"
+(done)="onDoneteTask($event)"
+>
+
+</app-task-item>
+            
+    </div>
+</div>
+</div>

@@ -1,0 +1,12 @@
+
+<div class="row mt-5">
+
+    <div class="col-lg-7"></div>
+    <p [ngStyle]="{'text-decoration': task.isDone ? 'line-through':'none'}"class="w-80">{{task.title}}</p>
+    <div class="col-auto">
+
+<button type="submit" class="btn btn-warning mx-1"(click)="edited.emit(task.id)">Edit</button>
+<button type="submit"(click)="deleted.emit(task.id)"class="btn btn-danger mx-1">delet</button>
+<button type="submit"(click)="done.emit(task.id)"[class. btn-succes]="!task.isDone" [class. btn-warning]="task.isDone" class="btn mx-1"> @if(task.isDone){UnDone} @else {Done}</button>
+</div>
+</div>

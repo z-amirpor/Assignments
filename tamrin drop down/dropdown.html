@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>DropDown</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+clear-fix{
+clear: both;
+}
+a{	
+text-decoration: none;
+}
+#nav{
+
+background-color:#4b4b4c;
+border-bottom:36px solid #4b4b4c;
+}
+#nav ul{
+list-style: none;
+}
+#nav li{
+position: relative;
+}
+#nav > ul > li{
+float: left;			
+}
+#nav > ul > li > a{
+display: inline-block;
+color:#ffffff;
+padding: 22x;
+line-height: 35px;
+}
+#nav > ul > li:hover > a{
+background-color:#676767;
+color: #ffffff;
+}
+#nav .sub-menu{
+display: none;
+position: absolute;			
+}
+#nav .sub-menu > li > a{
+display: block;
+width: 120;
+background-color:#808080;
+color:#ffffff;
+padding:5px 10px;
+}
+#nav .sub-menu > li:hover > a{
+background-color:#989898;
+}
+#nav li:hover > .sub-menu{
+display: block;
+}
+#nav .sub-menu > li > .sub-menu{
+left: 140px;
+top: 0;
+}
+</style>
+</head>
+<body>
+<div id="nav">
+<ul>			
+<li>	
+<a href="#">برنامه نویسی</a> 
+<ul class="sub-menu">
+<li><a href="#">html</a>
+<li><a href="#">css</a>
+<li><a href="#">php</a> 
+<ul class="sub-menu">
+<li><a href="#">جلسه اول</a> 
+<li><a href="#">جلسه دوم</a>
+<ul class="sub-menu">
+<li><a href="#">1</a><li>
+<li><a href="#">2</a><li>
+<li><a href="#">3</a><li>
+</ul>
+</li>
+<li><a href="#">جلسه سوم </a>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="clear-fix"></div>
+</div>
+</body>
+</html>
+<head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

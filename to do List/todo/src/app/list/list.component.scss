@@ -1,0 +1,56 @@
+.list-wrapper{
+width: 300px;
+margin-inline: auto;
+border: 1px ridge blue;
+margin-top: 50px;
+border-radius: 20px;
+}
+.list-wrapper ul{
+padding: 0px;
+
+}
+.list-wrapper{
+list-style-type: none;
+display: block;
+border: 1px solid orange;
+background-color: orange;
+margin-inline: auto ;
+height: 30px;
+border-radius: 5px;
+padding: 5px;
+width: calc(100%-30px);
+}
+
+.list-wrapper-done{
+background-color: rgb(12, 217, 112);
+}
+.list-item button{
+float:left;
+}
+.btn-done{
+border: none;
+background-color: green;
+padding: 4px;
+border-radius:5px ;
+transition: 0.3s;
+}
+.btn-delete{
+border: none;
+background-color: red;
+padding: 4px;
+border-radius: 5px ;
+transition: 0.3s;
+}
+.btn-delete:hover{
+background-color: rgb(104, 1, 1);
+}
+.btn-done:hover{
+background-color: rgb(0, 221, 0);
+
+}
+
+
+
+
+
+
